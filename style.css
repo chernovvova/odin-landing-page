@@ -3,17 +3,41 @@
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     min-height: 50px;
+    background-color: #1F2937;
 }
 
-.header-item {
+header *{
     margin-left: 16%;
     margin-right: 16%;
-} 
+}
+
+.header-logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.header-links {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.header-links * {
+    width: 100%;
+}
 
 .container {
     display: flex;
@@ -21,16 +45,82 @@ header {
 }
 
 .about-container {
+    background-color: #1F2937;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 10%;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
 }
 
 .about-container * {
-    width: 300px;
-    align-content: center;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+    width: 400px;
+    gap: 10px;
 }
+
+.about-info-button {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 4px;
+    min-height: 35px;
+    width: 100px;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+.about-image {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    background-color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.info-header {
+    font-size: 38px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.info-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.info-images-item {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.info-image-item {
+    border:#3882F6 solid;
+    border-radius: 9px;
+    height: 150px;
+    width: 150px;
+}
+
+.info-image-text {
+    text-align: center;
+    font-size: 18px;
+    color:#afb0b4;
+}
+
 
